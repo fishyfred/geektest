@@ -1,0 +1,424 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'ambleregular', 'Trebuchet MS','Myriad Pro','junctionregular', sans-serif;
+  background: #EBEBEB url(../images/bgtop.gif) repeat-x;
+}
+#container {
+  width: 960px;
+  padding: 0 10px 70px;
+  margin: 0 auto;
+}
+header {
+  height: 4.125em;
+}
+header h1 a,
+footer h6 a {
+  float: left; /* displays block */
+  height: 3.6666em;
+  padding: 0 16px 0 102px;
+  background: url(../images/geeklogo.png) no-repeat;
+  font-family: 'Trebuchet MS';
+  font-weight: normal;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.125em;
+  line-height:  3.6666em;
+}
+ul.social {
+  float: right;
+}
+ul.social li {
+  float: left;
+  list-style: none;
+}
+
+ul.social li a {
+  color: #B3B3B3;
+  text-decoration: none;
+  font-family: 'Myriad Pro';
+  margin: 3px 16px 0 20px;
+  font-size: .75em;
+  line-height: 5.5em;
+}
+
+ul.social li a svg {
+  margin: 0 .66em 0 0;
+}
+
+ul.social li a:hover {
+	color: #F26C4F;
+	transition: .5s ease;
+}
+/*****************************/
+/********* Top Nav ***********/
+/*****************************/
+nav.topmenu {
+  height: 4.3125em;
+  background: #474747;
+}
+ul.global {
+  width: 610px;
+  padding: 0 10px 0 74px;
+  float: left;
+}
+nav ul.global li {
+  float: left;
+  font-size: .875em;
+  line-height: 4.9285em;
+}
+ul.global li a {
+  float: left; /* float makes element block */
+  color: #FFF;
+  text-decoration: none;
+  height: 4.9285em;
+  padding: 0 4px;
+  margin: 0 22px;
+}
+ul.global li a:hover,
+ul.global li a:focus {
+  color: #F26C4F;
+  border-bottom: 3px solid #F26C4F;
+}
+/* drop down menu */
+ul.ddmenu {
+  width: 300px;
+  float: right;
+  font-size: 12px;
+  line-height: 5.75em;
+}
+ul.ddmenu li {
+  position: relative;
+}
+ul.ddmenu li a svg {
+  margin: 0 .66em 0 0;
+}
+ul.ddmenu li a {
+  color: #FFF;
+  font-family: 'Myriad Pro';
+  text-decoration: none;
+}
+ul.ddmenu li a:hover {
+	color: #F26C4F;
+}
+ul.ddmenu li ul {
+  position: absolute;
+  left: -9999px;
+  background: rgba(71,71,71,.95);
+  padding: 20px 30px;
+}
+ul.ddmenu li:hover ul {
+  left: 10px;
+  top: 42px;
+}
+ul.ddmenu li ul li {
+	line-height: 2.5em;
+}
+/*****************************/
+/********* featured **********/
+/*****************************/
+#featured {
+  width: 940px;
+  height: 529px;
+  background: url(../images/featured_home.jpg);
+  margin: 15px 0 0 0;
+  padding: 44px 0 0 0;
+  text-align: center;
+}
+section.featured_content {
+  width: 620px;
+  margin: 0 auto;
+  padding: 20px 80px 30px;
+  background: rgba(55,55,55,.5);
+  border-radius: 6px;
+  color: #FFF;
+}
+section.featured_content h2 {
+  font-family: 'Myriad Pro';
+  font-size: 1.875em;
+  line-height: .8em;
+  font-weight: normal;
+}
+section.featured_content p {
+  font-family: Arial;
+  font-size: 1em;
+  line-height: 1.4375em;
+}
+a.cta {
+  display: inline-block;
+  margin: 100px 10px;
+  padding: 0 36px;
+  background: #e74c3c;
+  font-size: 1.25em;
+  line-height: 2.4em;
+  font-family: 'junctionregular';
+  text-decoration: none;
+  color: #FFF;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+a.cta:hover {
+  background: rgba(231,76,60,.1);
+  border: 1px solid #FFF;
+}
+/*****************************/
+/********** recent ***********/
+/*****************************/
+#recent {
+  padding: 20px 0 0 0;
+}
+#recent figure {
+  width: 300px;
+  background: #FFF;
+  float: left;
+  margin-right: 20px;
+  min-height: 380px;
+}
+#recent figure:nth-child(3n+3) {
+  margin-right: 0;
+}
+#recent figure figcaption {
+  padding: 24px 30px;
+}
+#recent figure figcaption h3 {
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  color: #4F4F4F;
+  margin: 0 0 16px 0;
+}
+#recent figure figcaption p {
+	font-family: Arial;
+	font-size: .75em;
+	line-height: 2em;
+	color: #646464;
+}
+
+/*****************************/
+/*********** main ************/
+/*****************************/
+main {
+  padding: 5px 0 0 0;
+  width: 620px;
+  float: left;
+}
+article.minipost {
+  margin: 15px 0 0 0;
+  background-color: #FFF;
+  border-left: 4px solid #F26C4F;
+  padding: 34px 60px 34px 34px;
+}
+article.minipost h4 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: normal;
+  color: #474747;
+}
+article.minipost p {
+	font-size: .875em;
+	line-height: 1.5em;
+	color: #707070;
+}
+main > a {
+  text-decoration: none;
+}
+main a article.minipost:hover {
+  background-color: #F26C4F;
+  border-left: 4px solid #CE4E32;
+  transition: .5s ease;
+}
+main a article.minipost:hover h4,
+main a article.minipost:hover p {
+  color: #F2F3F4;
+	transition: .5s ease;
+}
+section.gallery {
+  background-image: url(../images/waterfall.jpg);
+  height: 300px;
+  margin: 15px 0 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+section.gallery a {
+  display: block;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  color: white;
+  padding: 10px;
+  border: solid 1px #006;
+  background: rgba(0,0,102,.4);
+  position: relative;
+  top: 70%;
+}
+section.gallery a:hover {
+	background: rgba(255,255,255,.4);
+	color: #006;
+	transition: .5s ease;
+}
+/*****************************/
+/*********** aside ***********/
+/*****************************/
+aside {
+  width: 300px;
+  float: right;
+  padding: 20px 0 0 0;
+}
+aside figure.adv {
+	background: #373737;
+}
+aside figure.adv figcaption {
+  padding: 20px 28px 20px 26px;
+  color: #FFF;
+}
+figure.adv figcaption h4 {
+  font-weight: normal;
+  font-size: 1.875em;
+  line-height: 1.0333em;
+}
+figure.adv figcaption p {
+	font-family: Arial;
+	font-size: .75em;
+	line-height: 2em;
+	padding: 17px 0 0 0;
+}
+
+/*****************************/
+/*********** footer **********/
+/*****************************/
+footer.lower {
+  min-height: 260px;
+  background: #373737;
+}
+footer.lower nav {
+  width: 940px;
+  margin: 0 auto;
+  height: 65px;
+  background: #474747;
+}
+footer.lower h6 {
+  float: left;
+  font-weight: normal;
+}
+footer.lower nav ul.global {
+  float: right;
+  padding: 0;
+}
+footer.lower nav ul.global li a {
+  height: 4.6428em;
+}
+/*****************************/
+/********* interior **********/
+/*****************************/
+.interior #featured {
+  height: 420px;
+}
+.dportfolio #featured {
+  background: url(../images/featured_portfolio.jpg);
+}
+.dservices #featured {
+  background: url(../images/featured_services.jpg);
+}
+.dstaff #featured {
+  background: url(../images/featured_staff.jpg);
+}
+.darticles #featured {
+  background: url(../images/featured_articles.jpg);
+}
+.dcontact #featured {
+  background: url(../images/featured_contact.jpg);
+}
+.dportfolio nav ul.global li.nportfolio a,
+.dservices nav ul.global li.nservices a,
+.dstaff nav ul.global li.nstaff a,
+.darticles nav ul.global li.narticles a,
+.dcontact nav ul.global li.ncontact a {
+  border-bottom: solid 3px #F26C4F;
+}
+
+
+.interior main {
+  font-family: 'junctionregular';
+  padding: 28px 70px 120px 48px;
+  background: #FFF;
+  margin: 20px 0 0 0;
+}
+.interior main time svg {
+  margin: 0 .66em 0 0;
+}
+.interior main time,
+.interior main small {
+  font-size: .6875em;
+  color: #8F8F8F;
+}
+.interior main h4 {
+  font-size: 2em;
+  color: #f26c4f;
+  line-height: 1.3125em;
+  margin: 20px 0;
+}
+.interior main p {
+  font-size: .875em;
+  line-height: 1.7857em;
+  color: #949494;
+}
+
+/* contact page form styles */
+.dcontact main {
+  padding: 30px 0 50px 60px;
+}
+form.contactform {
+  margin: 30px 0 50px;
+}
+fieldset {
+  margin: 20px 0 0 0;
+}
+label,
+legend,
+select,
+textarea {
+  display: block;
+  margin: 20px 0 5px;
+  font-size: .875em;
+}
+input[type="checkbox"] + label {
+  display: inline;
+}
+input[type="text"], input[type="email"], textarea {
+  width: 350px;
+  padding: 10px;
+}
+input:hover, textarea:hover {
+  background: #666;
+  color: #FFF;
+}
+/* clearfix */
+.cf::before,
+.cf::after {
+  content: "";
+  display: block;
+}
+.cf::after {
+  clear: both;
+}
+.cf {
+  zoom: 1; /* for old ie (trigger has layout) */
+}
+
+/* fonts */
+@font-face {
+  font-family: 'ambleregular';
+  src: url('Amble-Regular-webfont.eot');
+  src: url('Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('Amble-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'junctionregular';
+  src: url('Junction-regular-webfont.eot?#iefix') format('embedded-opentype'), url('Junction-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
